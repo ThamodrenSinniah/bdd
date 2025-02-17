@@ -3,6 +3,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+import os
+
+USER_EMAIL = os.getenv("USER_EMAIL")
+USER_PASSWORD = os.getenv("USER_PASSWORD")
 
 
 @given('I am on the login page')
@@ -17,8 +21,8 @@ def enter_valid_credentials(context):
     password_field = wait.until(EC.presence_of_element_located((By.ID, "password")))
     login_button = wait.until(EC.presence_of_element_located((By.ID, "login-btn")))
 
-    username_field.send_keys("thamo")
-    password_field.send_keys("thamo")
+    username_field.send_keys(USER_EMAIL)
+    password_field.send_keys(USER_PASSWORD)
     login_button.click()
 
 

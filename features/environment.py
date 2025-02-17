@@ -1,9 +1,10 @@
-import os
-import logging
-
 from behave import use_fixture, fixture
+from dotenv import load_dotenv
 
 from features.fixture.browser import ChromeBrowser
+
+
+load_dotenv()
 
 @fixture
 def chrome_browser(context):
