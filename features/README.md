@@ -38,6 +38,10 @@ Feature: Login
 
 ## Running Tests
 
+Before running the tests, make sure your app is up and running.
+
+Refer to the README in `app/README.md` to start running the app
+
 To run the tests, follow the commands:
 
 1. **Ensure your virtual environment is activated with poetry**

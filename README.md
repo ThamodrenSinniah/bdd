@@ -18,7 +18,7 @@
    poetry install
    ```
 
-3. **Activate the Poetry shell:**
+3. **Activate the Poetry shell (Python Virtual Environment):**
    ```sh
    poetry shell
    ```
