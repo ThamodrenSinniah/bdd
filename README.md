@@ -22,3 +22,9 @@
    ```sh
    poetry shell
    ```
+   
+### Running the Application
+To run the app, head over to `app/README.md`.
+
+### Running the BDD Tests
+To run the BDD tests, head over to `features/README.md`.
